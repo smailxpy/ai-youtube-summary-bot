@@ -39,6 +39,9 @@ def summarize_text(text: str, max_chars: int = 5000) -> str:
         return summary
     except Exception as e:
         return f"❌ Error summarizing text: {e}"
+    
+# TODO: Add progress indicator while transcribing long audio
+# TODO: Split long summaries into multiple Telegram messages
 
 
 def transcribe_audio_from_youtube(url: str) -> str:
